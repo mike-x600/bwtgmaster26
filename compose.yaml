@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  bw-django-webservice:
+    build:
+      context: .
+      dockerfile: build.Dockerfile
+    container_name: bw-django-webservice
+    environment:
+      - FOO=bar
